@@ -13,6 +13,7 @@ while True :
     nove_digitos = ''
     for i in range(9) :
         nove_digitos += str(random.randint(0, 9))
+
     contador_regressivo = 10
     resultado_um = 0
      
@@ -24,7 +25,7 @@ while True :
     digito_1 = digito_1 if digito_1 <= 9 else 0
     
     # calculo so segundo digito
-    dez_digitos = ''
+    dez_digitos = nove_digitos + str(digito_1)
     contador_regr_dois = 11
     resultado_dois = 0
     
